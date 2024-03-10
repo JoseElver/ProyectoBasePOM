@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inicio de sesion" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-10T03:16:38" hostname="DESKTOP-H392E30" time="22.112">
+  <properties/>
+  <testcase name="Login failed" classname="inicio de sesion" time="12.754"/>
+  <testcase name="Login exitoso" classname="inicio de sesion" time="9.358"/>
+  <system-out><![CDATA[
+@HU @Test1
+Esquema del escenario: Login failed                          ?[90m# src/test/resources/features/inicioSesion.feature:19?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la pagina de inicio de sesion?[0m ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.queElUsuarioNavegaALaPaginaDeInicioDeSesion()?[0m
+  ?[32mCuando ?[0m?[32mingresa sus credenciales?[0m                            ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.ingresaSusCredenciales(io.cucumber.datatable.DataTable)?[0m
+    | adm1n | seren1ty |
+  ?[32mEntonces ?[0m?[32mdeberia ver la pagina principal?[0m                   ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.deberiaVerLaPaginaPrincipal()?[0m
+
+@HU @Test1
+Esquema del escenario: Login exitoso                         ?[90m# src/test/resources/features/inicioSesion.feature:20?[0m
+  ?[32mDado ?[0m?[32mque el usuario navega a la pagina de inicio de sesion?[0m ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.queElUsuarioNavegaALaPaginaDeInicioDeSesion()?[0m
+  ?[32mCuando ?[0m?[32mingresa sus credenciales?[0m                            ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.ingresaSusCredenciales(io.cucumber.datatable.DataTable)?[0m
+    | admin | serenity |
+  ?[32mEntonces ?[0m?[32mdeberia ver la pagina principal?[0m                   ?[90m# co.com.templay.pom.stepdefinitions.LoginStepDefinitions.deberiaVerLaPaginaPrincipal()?[0m
+]]></system-out>
+  <system-err><![CDATA[mar 09, 2024 10:16:39 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+mar 09, 2024 10:16:41 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 122
+mar 09, 2024 10:16:41 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+mar 09, 2024 10:16:51 P. M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+ADVERTENCIA: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+mar 09, 2024 10:16:51 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+mar 09, 2024 10:16:52 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 122
+mar 09, 2024 10:16:52 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

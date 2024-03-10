@@ -1,7 +1,4 @@
-# author: Nilo Chaverra
-# date: 15/01/2024
-# language: es
-
+#language:es
 
 @HU
 Característica: inicio de sesion
